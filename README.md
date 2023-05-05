@@ -87,35 +87,32 @@ _Figma file, Colours, Fonts & basic file setup pertaining to this project._
 * Color palette used within project
   * ```css
       /* project color palettes */
-       --clr-main-shade: hsl(45, 100%, 60%);
-       --clr-main: hsl(45, 100%, 70%);
-       --clr-main-tint: hsl(45, 100%, 80%);
+       --clr-main-shade: ;
+       --clr-main: ;
+       --clr-main-tint: ;
 
-       --clr-grey: hsl(0, 0%, 20%);
+       --clr-grey: ;
 
        --clr-accent-shade: ;
-       --clr-accent-pink: hsl(315, 100%, 70%);
-       --clr-accent-purple: hsl(240, 100%, 70%);
+       --clr-accent-pink: ;
+       --clr-accent-purple: ;
        --clr-accent-tint: ;
 
       /* figma project color palette */
-       --project-clr-pager-bg: hsl(196, 12%, 18%);
-       --project-clr-pager-display-bg: hsl(153, 24%, 69%);
-       --project-clr-pager-display-bg-tint: hsl(153, 24%, 89%);
-       --project-clr-phone-bg: hsl(0, 0%, 85%);
-       --project-clr-phone-display-bg: hsl(0, 0%, 27%);
+       --project-clr-pager-bg: ;
+       --project-clr-pager-display-bg: ;
+       --project-clr-pager-display-bg-tint: ;
+       --project-clr-phone-bg: ;
+       --project-clr-phone-display-bg: ;
 
-       --project-clr-reset-btn: hsl(12, 64%, 45%);
-       --project-clr-send-btn: hsl(160, 44%, 43%);
+       --project-clr-reset-btn: ;
+       --project-clr-send-btn: ;
 
-       --project-clr-border: hsl(0, 0%, 0%);
+       --project-clr-border: ;
 
        --project-clr-main-shade: ;
        --project-clr-main: ;
        --project-clr-main-tint: ;
-
-       --project-clr-grey-light: hsl(0, 0%, 97%);
-       --project-clr-grey-dark: hsl(0, 0%, 0%);
 
        --project-clr-accent-shade: ;
        --project-clr-accent: ;
