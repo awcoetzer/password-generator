@@ -201,10 +201,17 @@ for (let i = 0; i < btnsCopyEl.length; i++) {
   btnsCopyEl[i].addEventListener('click', function () {
 
     /*
-      small note on 
+      small note on the navigator, needs a secure connection
+      to can work, so if it doesn't work on scrimba check out
+      password-generator-awcoetzer.netlify.app
     */
     let copy = displayStretchTextsEl[i].textContent;
     navigator.clipboard.writeText(copy)
+
+    /*
+      this just display a message and sets it back to its 
+      original state.
+    */
     const message = setInterval(function () {
       copyTextEl[i].textContent = 'Copied';
     }, 1)
