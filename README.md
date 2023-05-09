@@ -19,8 +19,9 @@ We were given a figma [file](https://www.figma.com/file/NEj9JDycMjF3XKXq7swoc9/R
 #### PROJECT SCREENS
 _Some screenshots of the projects_
 
-![Full project](./resources/images/readme/full-layout.png 'Screenshot of the full project')
-_Screenshot of the project_
+<img src="./resources/images/readme/full-project.png" width="50%"> <img src="./resources/images/readme/full-project-responsive.png" width="10.94%">
+
+_Screenshot of the project full size & responsive_
 
 <br>
 
@@ -77,46 +78,46 @@ _Figma file, Colours, Fonts & basic file setup pertaining to this project._
 * Figma file can be found [here](https://www.figma.com/file/NEj9JDycMjF3XKXq7swoc9/Random-Password-Generator-(New-version)?node-id=102-702&t=RwX6lUFzDK8Bzwt2-0)
 * Font used within project
   * ```html
-      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500 0;800&family=Karla:wght@800&display=swap" rel="stylesheet">
     ```
 
   * ```css
-      
+      --typeface-sans: 'Inter', sans-serif;
+      --typeface-sans-karla: 'Karla', sans-serif;
     ```
 
 * Color palette used within project
   * ```css
-      /* project color palettes */
-       --clr-main-shade: ;
-       --clr-main: ;
-       --clr-main-tint: ;
+      /* color palettes */
+      /* main colors */
+      --clr-dt-main-shade: #121821;
+      --clr-dt-main: #1F2937;
+      --clr-dt-main-tint: ;
 
-       --clr-grey: ;
+      /* text colors */
+      --clr-dt-grey-offset: #D5D4D8;
+      --clr-dt-grey: #fff;
 
-       --clr-accent-shade: ;
-       --clr-accent-pink: ;
-       --clr-accent-purple: ;
-       --clr-accent-tint: ;
+      /* accent colors */
+      --clr-dt-accent-shade: #1da553;
+      --clr-dt-accent: #10B981;
+      --clr-dt-accent-tint: #55F991;
 
-      /* figma project color palette */
-       --project-clr-pager-bg: ;
-       --project-clr-pager-display-bg: ;
-       --project-clr-pager-display-bg-tint: ;
-       --project-clr-phone-bg: ;
-       --project-clr-phone-display-bg: ;
+      /* text highlight color */
+      --clr-dt-highlight: #4ADF86;
 
-       --project-clr-reset-btn: ;
-       --project-clr-send-btn: ;
+      /* border color */
+      --clr-dt-border: #2F3E53;
 
-       --project-clr-border: ;
+      /* button */
+      --clr-dt-btn-3d-white: linear-gradient(140deg, hsl(0, 0%, 100%), hsl(0, 0%, 40%));
+      --clr-dt-btn-3d-green: linear-gradient(140deg, hsl(144, 70%, 58%), hsl(144, 70%, 18%));
+      --clr-dt-btn-shadow: #273549;
 
-       --project-clr-main-shade: ;
-       --project-clr-main: ;
-       --project-clr-main-tint: ;
-
-       --project-clr-accent-shade: ;
-       --project-clr-accent: ;
-       --project-clr-accent-tint: ;
+      /* for password box background */
+      --clr-password-box: #273549;
 
     ```
 * General project variables layout
@@ -213,7 +214,6 @@ _Figma file, Colours, Fonts & basic file setup pertaining to this project._
       --clr-accent-shade: ;
       --clr-accent: ;
       --clr-accent-tint: ;
-
     }
     ```
 
@@ -233,13 +233,13 @@ _Figma file, Colours, Fonts & basic file setup pertaining to this project._
   * heading-secondary
     * ```css
         font-size: var(--font-36);
-        margin-bottom: var(--spacing-48);
+        margin-bottom: var(--spacing-96);
         ...
       ```
   * heading-tertiary
     * ```css
         font-size: var(--font-32);
-        margin-bottom: var(--spacing-48);
+        margin-bottom: var(--spacing-32);
         ...
       ```
 * Two types of containers
@@ -267,14 +267,17 @@ _Figma file, Colours, Fonts & basic file setup pertaining to this project._
         line-height: var(--line-height-15);
         letter-spacing: var(--letter-space-n05);
       }
-
+      
       .done-by--link,
       .done-by--link:link,
       .done-by--link:visited {
-        color: var(--clr-grey);
+        display: inline-block;
+        font-size: var(--font-14);
+        font-weight: var(--font-weight-500);
         text-decoration: none;
+        color: var(--clr-grey);
       }
-
+      
       .done-by--link:hover,
       .done-by--link:active {
         border-bottom: 1px solid var(--clr-grey);
