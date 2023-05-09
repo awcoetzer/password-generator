@@ -1,5 +1,18 @@
 'use strict';
 
+/*
+  Not much notes on this document, fairly simple, 
+  the 2 meaningful things to mention here is probably 
+  the function takes has a parameters whereby you can 
+  set the length. This will be used later when looking
+  for user input.
+  
+  The other is the looping over an array node list, instead
+  of selecting both display texts individually.
+
+  the other .js file has more notes than this one.
+*/
+
 const generateReqBtnEl = document.querySelector('.btn--pg-req');
 const displayReqTextsEl = document.querySelectorAll('.display-text--req');
 
@@ -18,13 +31,8 @@ const randomPassReq = function (length) {
 }
 
 generateReqBtnEl.addEventListener('click', function () {
-  const passwords = [
-    randomPassReq(15),
-    randomPassReq(15)
-  ]
-
   for (let i = 0; i < displayReqTextsEl.length; i++) {
-    displayReqTextsEl[i].textContent = passwords[i];
+    displayReqTextsEl[i].textContent = randomPassReq(15);
   }
 })
 
