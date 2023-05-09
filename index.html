@@ -9,7 +9,8 @@
     content="The random password generator project requires us to create a app that returns two random 15 character long passwords when the user click the button.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Karla:wght@800&display=swap"
+    rel="stylesheet">
   <title>Random Password Generator | Module 3 | Scrimba</title>
   <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
 </head>
@@ -25,33 +26,250 @@
     <!-- section hero -->
     <section class="section-padding section-hero">
       <div class="container container--hero">
-        <div class="hero-text-box">
+        <div class="hero grid grid--2-cols grid--center-v">
+          <!-- hero text -->
+          <div class="hero-text-box">
+            <span class="pre-heading">Module 3</span>
+            <h1 class="heading-primary">Random Password Generator</h1>
+            <p class="hero-text">
+              The random password generator project requires us to create a app that returns two random 15 character
+              long passwords when the user click the button.
+            </p>
+            <a href="https://github.com/awcoetzer/password-generator" target="_blank"
+              class="link link--hero margin-right-sm">Project Repo</a>
+            <a href="" target="_blank" class="link link--hero scrimba">Learn at
+              Scrimba</a>
 
+          </div>
+
+          <!-- hero image -->
+          <picture class="hero-img-box">
+            <source srcset="./resources/images/hero/hero-min.png" type="image/webp">
+            <source srcset="./resources/images/hero/hero-min.png" type="image/png">
+            <img src="./resources/images/hero/hero-min.png"
+              alt="Images by catalyststuff on Freepik of a male character wearing a black hoodie working on a laptop with code line behind him"
+              class="hero-img">
+          </picture>
         </div>
+      </div>
+    </section>
 
-        <picture class="hero-img-box">
-          <button>lldsadsadsadsa dsadsad</button>
-        </picture>
+    <!-- page features -->
+    <section class="section-padding section-features">
+      <div class="container center-text">
+        <span class="pre-heading">Features</span>
+        <h2 class="heading-secondary">Take a look at our features</h2>
+      </div>
+
+      <div class="features">
+        <div class="container grid grid--4-cols grid--center-v">
+          <!-- feature 1 -->
+          <div class="feature-card">
+            <div class="feature-card-header-box">
+              <ion-icon name="dice-outline" class="ion-icon"></ion-icon>
+              <span class="heading--feature">Randomness</span>
+            </div>
+
+            <p class="feature-text">
+              Effortlessly create highly secure, randomized passwords for optimal protection.
+            </p>
+          </div>
+
+          <!-- feature 2 -->
+          <div class="feature-card">
+            <div class="feature-card-header-box">
+              <ion-icon name="return-up-forward-outline" class="ion-icon"></ion-icon>
+              <span class="heading--feature">Custom Length</span>
+            </div>
+            <p class="feature-text">
+              Tailor your password length between 8 to 120 characters to suit your security needs and preferences.
+            </p>
+          </div>
+
+          <!-- feature 3 -->
+          <div class="feature-card">
+            <div class="feature-card-header-box">
+              <ion-icon name="copy-outline" class="ion-icon"></ion-icon>
+              <span class="heading--feature">Easy Copy</span>
+            </div>
+            <p class="feature-text">
+              Copy your password instantly with one click for easy access and added security.
+            </p>
+          </div>
+
+          <!-- feature 4 -->
+          <div class="feature-card">
+            <div class="feature-card-header-box">
+              <ion-icon name="toggle-outline" class="ion-icon"></ion-icon>
+              <span class="heading--feature">Choice</span>
+            </div>
+            <p class="feature-text">
+              Choose between adding Uppercase letters, Numbers or Symbols to be included into your passwords.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- section password generator -->
+    <!-- required version -->
     <section class="section-padding section-password-generator">
       <div class="container">
-        <span class="pre-heading">Required & Stretch Goal Version</span>
+        <span class="pre-heading">Required Version</span>
         <h2 class="heading-secondary">Random Password Generator</h2>
+      </div>
+
+      <div class="password-generator">
+        <div class="container grid grid--1-col">
+          <div class="password-generator-box">
+
+            <!-- password text box -->
+            <div class="pg-text-box">
+              <h3 class="heading-tertiary--pg">
+                Generate a <span class="highlight--green">random password</span>
+              </h3>
+              <p class="pg-text">Never use an insecure password again.</p>
+              <button class="btn--pg btn--pg-req">Generate passwords</button>
+            </div>
+
+            <!-- password display box -->
+            <div class="pg-display-box">
+              <!-- password display one -->
+              <div class="display-box">
+                <span class="display-text display-text--req">
+
+                </span>
+              </div>
+
+              <!-- password display two -->
+              <div class="display-box">
+                <span class="display-text display-text--req">
+
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section password generator -->
+    <!-- stretch goal version -->
+    <section class="section-padding section-password-generator">
+      <div class="container">
+        <span class="pre-heading">Stretch Goal Version</span>
+        <h2 class="heading-secondary">Random Password Generator</h2>
+      </div>
+
+      <div class="password-generator">
+        <div class="container grid grid--1-col">
+          <div class="password-generator-box">
+
+            <!-- password text box -->
+            <div class="pg-text-box">
+              <h3 class="heading-tertiary--pg">
+                Generate a <span class="highlight--green">random password</span>
+              </h3>
+              <p class="pg-text">
+                Never use an insecure password again.
+              </p>
+
+              <!-- selectors -->
+              <form class="form">
+                <div class="password-length">
+                  <input type="range" class="range-slider" min="8" max="120" value="8" step="1">
+                  <span class="range-slider--text">120</span>
+                </div>
+
+                <div class="checkboxes">
+                  <!-- toggle switch ( uppercase ) -->
+                  <label for="toggle--uppercase" class="toggle">
+                    <input type="checkbox" id="toggle--uppercase" class="toggle--input">
+
+                    <div class="toggle--fill"></div>
+                    <span class="toggle-text">Uppercase</span>
+                  </label>
+
+                  <!-- toggle switch ( numbers ) -->
+                  <label for="toggle--number" class="toggle">
+                    <input type="checkbox" id="toggle--number" class="toggle--input">
+
+                    <div class="toggle--fill"></div>
+                    <span class="toggle-text">Numbers</span>
+                  </label>
+
+                  <!-- toggle switch ( symbols ) -->
+                  <label for="toggle--symbol" class="toggle">
+                    <input type="checkbox" id="toggle--symbol" class="toggle--input">
+
+                    <div class="toggle--fill"></div>
+                    <span class="toggle-text">Symbols</span>
+                  </label>
+                </div>
+              </form>
+
+              <!-- Generate button -->
+              <button class="btn--pg btn--pg-stretch">Generate passwords</button>
+            </div>
+
+
+
+            <!-- password display box -->
+            <div class="pg-display-box">
+              <!-- password display one -->
+              <div class="pass-container">
+                <div class="display-box">
+                  <span class="display-text display-text--stretch"></span>
+                </div>
+
+                <button class="btn--copy">
+                  <ion-icon name="copy-outline" class="copy-icon"></ion-icon>
+                  <span class="copy-text">Copy</span>
+                </button>
+              </div>
+
+              <!-- password display two -->
+              <div class="pass-container">
+                <div class="display-box">
+                  <span class="display-text display-text--stretch"></span>
+                  
+                </div>
+
+                <button class="btn--copy">
+                  <ion-icon name="copy-outline" class="copy-icon"></ion-icon>
+                  <span class="copy-text">Copy</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </section>
   </main>
 
   <!-- footer section -->
-  <footer class="footer">
-
+  <footer class="section-padding section-footer">
+    <div class="container">
+      <div class="footer-text-box center-text">
+        <p class="done-by">
+          This project was done by <a href="https://github.com/awcoetzer" class="done-by--link" target="_blank">Andre W.
+            Coetzer</a> | <a href="https://www.freepik.com/author/catalyststuff" target="_blank"
+            class="done-by--link">Images by
+            catalyststuff</a> on Freepik
+        </p>
+      </div>
+    </div>
   </footer>
 
   <!-- script links -->
   <script src="./resources/javascript/app-ver-1.js"></script>
   <script src="./resources/javascript/app-ver-2.js"></script>
+
+  <!-- ion icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
