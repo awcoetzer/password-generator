@@ -22,21 +22,10 @@ let sliderValue, uppercase, number, symbol;
 /*
   below holds different arrays housing either, lovercase, uppercase, numbers or symbols seperately.
 */
-const lowercaseArr = [
-  "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
-];
-
-const uppercaseArr = [
-  "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
-]
-
-const numbersArr = [
-  "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
-]
-
-const symbolsArr = [
-  "~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "[", "}", "]", ",", "|", ":", ";", "<", ">", ".", "?"
-]
+const lowercaseArr = "abcdefghijklmnopqrstuvwxyz";
+const uppercaseArr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const numbersArr = '0123456789'
+const symbolsArr = '~`!@#$%^&*()_-+={[}],|:;<>.?'
 
 /*
   the first function here is to initialize the
@@ -206,19 +195,17 @@ for (let i = 0; i < btnsCopyEl.length; i++) {
       password-generator-awcoetzer.netlify.app
     */
     let copy = displayStretchTextsEl[i].textContent;
+    console.log(copy)
     navigator.clipboard.writeText(copy)
 
     /*
       this just display a message and sets it back to its 
       original state.
     */
-    const message = setInterval(function () {
-      copyTextEl[i].textContent = 'Copied';
-    }, 1)
+    copyTextEl[i].textContent = 'Copied';
 
     setTimeout(function () {
-      clearInterval(message)
       copyTextEl[i].textContent = 'Copy';
-    }, 2000)
+    }, 500)
   })
 }
